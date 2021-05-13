@@ -1,16 +1,11 @@
 # ckeditor PHP example
 
-## To enable the ckfinder you will need to install GD-library 
-`apt-get install php-gd`
+```
+docker build -t ckeditor-php .
+docker run -p 8081:80 ckeditor-php
+```
 
-## restart apache 
-`systemctl restart apache2`
-
-## Create a folder called ./uploads
-`mkdir uploads`
-
-## Change the permission 
-```chmod 755 uploads/```
+Visit: http://127.0.0.1:8081
 
 more info. 
 https://ckeditor.com/docs/ckfinder/ckfinder3-php/system_requirements.html
